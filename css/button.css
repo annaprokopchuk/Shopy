@@ -1,0 +1,7 @@
+.button {
+	display: inline-flex;
+}
+
+.button:hover {}
+.button:focus {}
+.button.is-active {}

@@ -1,0 +1,157 @@
+@import url("../css/button.css");
+@import url("../css/card.css");
+@import url("../css/form.css");
+@import url("../css/main.css");
+@import url("../css/navbar.css");
+@import url("../css/section.css");
+@import url("../css/slider.css");
+
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Bold';
+  src: url('HarmoniaSansProCyr-Bold.eot?#iefix') format('embedded-opentype'),  
+        url('HarmoniaSansProCyr-Bold.otf')  format('opentype'),
+        url('HarmoniaSansProCyr-Bold.woff') format('woff'), 
+        url('HarmoniaSansProCyr-Bold.ttf')  format('truetype'), 
+        url('HarmoniaSansProCyr-Bold.svg#HarmoniaSansProCyr-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Black';
+  src: url('HarmoniaSansProCyr-Black.eot?#iefix') format('embedded-opentype'),  
+        url('HarmoniaSansProCyr-Black.otf')  format('opentype'),
+        url('HarmoniaSansProCyr-Black.woff') format('woff'), 
+        url('HarmoniaSansProCyr-Black.ttf')  format('truetype'), 
+        url('HarmoniaSansProCyr-Black.svg#HarmoniaSansProCyr-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-SemiBd';
+  src: url('../fonts/HarmoniaSansProCyr-SemiBd.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/HarmoniaSansProCyr-SemiBd.otf')  format('opentype'),
+        url('../fonts/HarmoniaSansProCyr-SemiBd.woff') format('woff'), 
+        url('../fonts/HarmoniaSansProCyr-SemiBd.ttf')  format('truetype'), 
+        url('../fonts/HarmoniaSansProCyr-SemiBd.svg#HarmoniaSansProCyr-SemiBd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Regular';
+  src: url('../fonts/HarmoniaSansProCyr-Regular.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/HarmoniaSansProCyr-Regular.otf')  format('opentype'),
+        url('../fonts/HarmoniaSansProCyr-Regular.woff') format('woff'), 
+        url('../fonts/HarmoniaSansProCyr-Regular.ttf')  format('truetype'), 
+        url('../fonts/HarmoniaSansProCyr-Regular.svg#HarmoniaSansProCyr-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Italic';
+  src: url('../fonts/HarmoniaSansProCyr-Italic.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/HarmoniaSansProCyr-Italic.otf')  format('opentype'),
+        url('../fonts/HarmoniaSansProCyr-Italic.woff') format('woff'), 
+        url('../fonts/HarmoniaSansProCyr-Italic.ttf')  format('truetype'), 
+        url('../fonts/HarmoniaSansProCyr-Italic.svg#HarmoniaSansProCyr-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'HarmoniaSansProCyr-Regular', sans-serif;
+    color: #34404b;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container::after,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1, h2, h3 {
+    font-family: 'HarmoniaSansProCyr-Black', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+h4 {
+    font-family: 'HarmoniaSansProCyr-Bold', sans-serif;
+    margin: 25px 0 28px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* li {
+    list-style: none;
+}
+
+* ul {
+    padding: 0;
+    margin: 0;
+}
+
+* a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #34404b;
+    display: inline-block;
+}
+
+* p {
+    margin: 0 0 10px 0;
+    color: #495662;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.border {
+    height: 1px;
+    background: #f2f4f7;
+    margin-bottom: 25px;
+}
+
+.main {
+    background-color: #f4f6f8;
+}
+
+.font-sm {
+    font-size: 12px;
+}
+
+.brand-color {
+    color: #ff5912;
+}
+

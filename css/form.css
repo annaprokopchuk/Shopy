@@ -1,0 +1,10 @@
+.form {}
+.form-group {}
+.form-label {}
+.form-control {}
+.form-chekbox {}
+.form-radio {}
+
+textarea {
+	resize: vertical;
+}

@@ -1,0 +1,191 @@
+/*<!-- card-produkt -->
+				<div class="card-product-group">
+					<div class="card card-product">
+						<div class="card-header">
+							<img src="images/img-1.png" alt="">
+						</div>
+						<div class="card-body">
+							<h4 class="card-title">Reebok Track Jacket</h4>
+							<p class="card-price">100$</p>
+						</div>
+						<div class="card card-hover">
+							<div class="card-header">
+								<img src="images/img-sm-1.png" alt="">
+							</div>
+							<div class="card-body">
+								<h4 class="card-title">Reebok Track Jacket</h4>
+								<ul class="list-sizes">
+									<li>sizes</li>
+									<li>:</li>
+									<li>s - m - l - x</li>
+								</ul>
+								<ul class="list-colors">
+									<li class="red"><a href="#"></a></li>
+									<li class="black"><a href="#"></a></li>
+									<li class="blue"><a href="#"></a></li>
+									<li class="green"><a href="#"></a></li>
+								</ul>
+							</div>
+							<div class="border"></div>
+							<div class="card-footer">
+								<ul class="list-option">
+									<li><a href="#">
+										<img src="images/share-icon.png" alt="share">
+									</a></li>
+									<li><a href="#">
+										<img src="images/basket-2.png" alt="basket">
+									</a></li>
+									<li><a href="#">
+										<img src="images/like-icon.png" alt="like">
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>*/
+.card {
+	display: flex;
+	padding: 25px;
+	background: #fff;
+	flex-direction: column;
+	width:  calc(25% - 30px);
+	margin: 15px;
+}
+
+.card-product-group .card-product {
+	position: relative;
+}
+
+.card-product-group {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 70px;
+	margin-left: -15px;
+    margin-right: -15px;
+}
+
+.card-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+	margin: 0
+}
+
+.card-product:hover .card-hover {
+	display: block;
+}
+
+.card-product .card-hover .card-header {
+	height: 100px;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+}
+
+.card-icon {}
+.card-title {}
+.card-content {}
+.card-description {}
+
+.card-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-price {
+	margin: 0;
+	color: #ff5912;
+	font-size: 18px;
+}
+
+.card-product .card-header {
+	height: 220px;
+}
+
+.card-title {
+	font-size: 18px;
+}
+
+.card-hover .card-title {
+	color: #ff5912;
+}
+
+.card-body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-body .list-sizes {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.card-body .list-sizes li {
+	padding: 0 5px;
+}
+
+.list-colors {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.list-colors li {
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 0 3px;
+}
+
+.list-colors li:hover {
+	border-color: #000;
+}
+
+.list-colors .red {
+	background-color: #e12e3f;
+	border: 1px solid #e12e3f;
+}
+
+.list-colors .black {
+	background-color: #34404b;
+	border: 1px solid #34404b;
+}
+
+.list-colors .blue {
+	background-color: #3ab3ff;
+	border: 1px solid #3ab3ff;
+}
+
+.list-colors .green {
+	background-color: #2fd967;
+	border: 1px solid #2fd967;
+}
+
+.card-footer .list-option {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.list-option li {
+	margin: 0 13px;
+}
+
+
+
+.card-top {}
+.card-right {}
+.card-left {}
+.card-bottom {}
+
+.card:hover .card-hover {}
