@@ -78,6 +78,15 @@
 	margin-right: 50px;
 }
 
+.menu-icon {
+	
+}
+
+.menu-icon svg {
+	fill: #ff5912;
+	display: none;
+}
+
 .navigation ul {
 	display: flex;
 	justify-content: space-between;

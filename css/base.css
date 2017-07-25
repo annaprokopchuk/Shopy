@@ -9,11 +9,11 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr-Bold';
-  src: url('HarmoniaSansProCyr-Bold.eot?#iefix') format('embedded-opentype'),  
-        url('HarmoniaSansProCyr-Bold.otf')  format('opentype'),
-        url('HarmoniaSansProCyr-Bold.woff') format('woff'), 
-        url('HarmoniaSansProCyr-Bold.ttf')  format('truetype'), 
-        url('HarmoniaSansProCyr-Bold.svg#HarmoniaSansProCyr-Bold') format('svg');
+  src: url('../fonts/HarmoniaSansProCyr-Bold.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/HarmoniaSansProCyr-Bold.otf')  format('opentype'),
+        url('../fonts/HarmoniaSansProCyr-Bold.woff') format('woff'), 
+        url('../fonts/HarmoniaSansProCyr-Bold.ttf')  format('truetype'), 
+        url('../fonts/HarmoniaSansProCyr-Bold.svg#HarmoniaSansProCyr-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,11 +21,11 @@
 
 @font-face {
   font-family: 'HarmoniaSansProCyr-Black';
-  src: url('HarmoniaSansProCyr-Black.eot?#iefix') format('embedded-opentype'),  
-        url('HarmoniaSansProCyr-Black.otf')  format('opentype'),
-        url('HarmoniaSansProCyr-Black.woff') format('woff'), 
-        url('HarmoniaSansProCyr-Black.ttf')  format('truetype'), 
-        url('HarmoniaSansProCyr-Black.svg#HarmoniaSansProCyr-Black') format('svg');
+  src: url('../fonts/HarmoniaSansProCyr-Black.eot?#iefix') format('embedded-opentype'),  
+        url('../fonts/HarmoniaSansProCyr-Black.otf')  format('opentype'),
+        url('../fonts/HarmoniaSansProCyr-Black.woff') format('woff'), 
+        url('../fonts/HarmoniaSansProCyr-Black.ttf')  format('truetype'), 
+        url('../fonts/HarmoniaSansProCyr-Black.svg#HarmoniaSansProCyr-Black') format('svg');
   font-weight: normal;
   font-style: normal;
 }

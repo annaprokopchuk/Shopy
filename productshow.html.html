@@ -6,10 +6,12 @@
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+		<link rel="stylesheet" href="jquery.range.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		<script src="jquery.range.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -40,14 +42,16 @@
 					<div class="border"></div>
 					<div class="container">
 						<div class="header-body">
-							<div class="header-left">
-								<div class="logo">
-									<a href="#">
-										<img src="images/big-logo.png" alt="logo">
-									</a>
-								</div>
-								<div class="navigation">
-									<ul>
+						<div class="header-left">
+							<div class="logo">
+								<a href="#">
+									<img src="images/big-logo.png" alt="logo">
+								</a>
+							</div>
+							<div class="navigation">
+								<div class="menu-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" height="50px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="50px" xml:space="preserve"><g><rect height="60" width="384" x="64" y="226"/></g><g><rect height="60" width="384" x="64" y="354"/></g><g><rect height="60" width="384" x="64" y="98"/></g></svg>		
+									<ul class="menu">
 										<li><a href="home.html.html">Home</a></li>
 										<li><a href="productshow.html.html">Products</a></li>
 										<li><a href="product.html.html">Hot Deals</a></li>
@@ -56,32 +60,33 @@
 									</ul>
 								</div>
 							</div>
-							<div class="header-right">
-								<ul class="list-option">
-									<li>
-										<a href="#">
-											<img src="images/search-icon.png" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="images/user-icon.png" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="images/basket.png" alt="">
-										</a>
-									</li>
-								</ul>
-							</div>
 						</div>
+						<div class="header-right">
+							<ul class="list-option">
+								<li>
+									<a href="#">
+										<img src="images/search-icon.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/user-icon.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/basket.png" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 					</div>
 				</div>
 				<div class="border"></div>
 			</header>
 			<main class="main">
-				<div class="section-basic-product">
+				<div class="section-basic-product section">
 					<div class="container">
 						<div class="section-basic-body">
 							<div class="section-slider-product">
@@ -91,10 +96,13 @@
 											<img src="images/img-4.png" alt="img">
 										</div>
 										<div class="img-holder">
-											<img src="images/img-4.png" alt="img">
+											<img src="images/img-1.png" alt="img">
 										</div>
 										<div class="img-holder">
 											<img src="images/img-4.png" alt="img">
+										</div>
+										<div class="img-holder">
+											<img src="images/img-2.png" alt="img">
 										</div>
 									</div>
 									<div class="slider-sm-item">
@@ -107,7 +115,9 @@
 										<div class="img-holder-sm">
 											<img src="images/img-sm-4.jpg" alt="img">
 										</div>
-										
+										<div class="img-holder-sm">
+											<img src="images/img-sm-5.jpg" alt="img">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -116,7 +126,7 @@
 									<div class="slider-header">
 										<h1 class="title">FULL WINTER KIT</h1>
 										<p class="first-paragraf">Half Jacket + Skiny Trousers + Boot leather</p>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry and typesetting industry</p>
 									</div>
 									<div class="border"></div>
 									<div class="sizes-container">
@@ -377,16 +387,18 @@
 						slidesToScroll: 1,
 						arrows: false,
 						fade: true,
-						asNavFor: '.slider-nav'
+						asNavFor: '.slider-sm-item'
 					});
 					$('.slider-sm-item').slick({
 						slidesToShow: 3,
 						slidesToScroll: 1,
-						asNavFor: '.slider-for',
-						dots: true,
+						asNavFor: '.slider-big-item',
+						// dots: true,
+						centerPadding : '0px',
 						centerMode: true,
 						focusOnSelect: true
 					});
+
 				</script>
 			</main>
 			<footer class="section section-footer">

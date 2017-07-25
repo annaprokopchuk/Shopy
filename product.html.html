@@ -43,14 +43,16 @@
 					<div class="border"></div>
 					<div class="container">
 						<div class="header-body">
-							<div class="header-left">
-								<div class="logo">
-									<a href="#">
-										<img src="images/big-logo.png" alt="logo">
-									</a>
-								</div>
-								<div class="navigation">
-									<ul>
+						<div class="header-left">
+							<div class="logo">
+								<a href="#">
+									<img src="images/big-logo.png" alt="logo">
+								</a>
+							</div>
+							<div class="navigation">
+								<div class="menu-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" height="50px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="50px" xml:space="preserve"><g><rect height="60" width="384" x="64" y="226"/></g><g><rect height="60" width="384" x="64" y="354"/></g><g><rect height="60" width="384" x="64" y="98"/></g></svg>		
+									<ul class="menu">
 										<li><a href="home.html.html">Home</a></li>
 										<li><a href="productshow.html.html">Products</a></li>
 										<li><a href="product.html.html">Hot Deals</a></li>
@@ -59,26 +61,27 @@
 									</ul>
 								</div>
 							</div>
-							<div class="header-right">
-								<ul class="list-option">
-									<li>
-										<a href="#">
-											<img src="images/search-icon.png" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="images/user-icon.png" alt="">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="images/basket.png" alt="">
-										</a>
-									</li>
-								</ul>
-							</div>
 						</div>
+						<div class="header-right">
+							<ul class="list-option">
+								<li>
+									<a href="#">
+										<img src="images/search-icon.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/user-icon.png" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/basket.png" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 					</div>
 				</div>
 			</header>
@@ -87,34 +90,39 @@
 					<div class="section section-product-options">
 						<div class="section-body">
 							<div class="sitebar">
-								<div class="sitebar-items">
+								<div class="sitebar-items categories">
 									 <form action="#">
-										<p>Categories</p>
-										<p><input name="categories" type="radio" value="man">Man</p>
-										<p><input name="categories" type="radio" value="woman">Woman</p>
-										<p><input name="categories" type="radio" value="childrens">Childrens</p>
-										<p><input name="categories" type="radio" value="deals" checked>Hot Deals</p>
+										<p class="brand-color othefont">Categories</p>
+										<p><input id="man" name="categories" type="radio" checked><label for="man">Man</label></p>
+										<p><input id="woman" name="categories" type="radio"><label for="woman">Woman</label></p>
+										<p><input id="childrens" name="categories" type="radio"><label for="childrens">Childrens</label></p>
+										<p><input id="deals" name="categories" type="radio"><label for="deals">Hot Deals</label></p>
 									</form> 
 								</div>
 								<div class="sitebar-items">
-									<input type="hidden" class="slider-input" value="23" />
+									<p class="brand-color othefont">Price Filtter</p>
+									<input type="range" class="slider-input" value="23"/>
 								</div>
-								<div class="sitebar-items">
+								<div class="sitebar-items checkbox-stile">
 									<form action="#">
-										<p>Sizes</p>
-										<p><input name="sizes" type="radio" value="small" checked>Small</p>
-										<p><input name="sizes" type="radio" value="midum">Midum</p>
-										<p><input name="sizes" type="radio" value="larg">Larg</p>
-										<p><input name="sizes" type="radio" value="xlarg">X Larg</p>
+										<p class="brand-color othefont">Sizes</p>
+										<p><input name="sizes" type="checkbox" id="small" checked><label for="small"><span></span>Small</label></p>
+										<p><input name="sizes" type="checkbox" id="midum"><label for="midum"><span></span>Midum</label></p>
+										<p><input name="sizes" type="checkbox" id="larg"><label for="larg"><span></span>Larg</label></p>
+										<p><input name="sizes" type="checkbox" id="xlarg"><label for="xlarg"><span></span>X Larg</label></p>
 									</form> 
 								</div>
-								<div class="sitebar-items">
+								<div class="sitebar-items checkbox-stile">
 									<form action="#">
-										<p>Brands</p>
-										<p><input name="brands" type="radio" value="reebok">Reebok</p>
-										<p><input name="brands" type="radio" value="addidas">Addidas</p>
-										<p><input name="brands" type="radio" value="nike">Nike</p>
-										<p><input name="brands" type="radio" value="active" checked>Active</p>
+										<p class="brand-color othefont">Brands</p>
+										<p><input name="brands" type="checkbox" id="reebok" checked>
+										<label for="reebok"><span></span>Reebok</label></p>
+										<p><input name="brands" type="checkbox" id="addidas">
+										<label for="addidas"><span></span>Addidas</label></p>
+										<p><input name="brands" type="checkbox" id="nike">
+										<label for="nike"><span></span>Nike</label></p>
+										<p><input name="brands" type="checkbox" id="active">
+										<label for="active"><span></span>Active</label></p>
 									</form> 
 								</div>
 							</div>
@@ -527,11 +535,17 @@
 					    to: 100,
 					    step: 1,
 					    scale: [0,25,50,75,100],
-					    format: '%s',
+					    format: '%s money',
 					    width: 300,
 					    showLabels: true,
-					    isRange : true
+					    isRange: true,
+					    snap: true
 					});
+					$('.slider').jRange('setValue', '10,20');
+					$('.slider').jRange('setValue', '10');
+					$('.slider').jRange('updateRange', '0,100');
+					$('.slider').jRange('updateRange', '0,100', '25,50');
+					$('.slider').jRange('updateRange', '0,100', 25);
 				</script>
 			</main>
 			<footer class="section section-footer">

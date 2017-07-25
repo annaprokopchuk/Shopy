@@ -47,6 +47,8 @@
 .slider-footer {
 	display: flex;
 	align-items: center;
+	font-family: 'HarmoniaSansProCyr-SemiBd', sans-serif;
+	font-weight: 700;
 }
 
 .slider-basket {
@@ -105,4 +107,5 @@
 .slick-dots .slick-active {
 	height: 36px;
 }
+
 
