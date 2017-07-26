@@ -6,12 +6,11 @@
 		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-		<link rel="stylesheet" href="jquery.range.css">
 		<link rel="stylesheet" type="text/css" href="css/base.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-		<script src="jquery.range.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 
 	</head>
 	<body>
@@ -50,16 +49,14 @@
 								</a>
 							</div>
 							<div class="navigation">
-								<div class="menu-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" height="50px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="50px" xml:space="preserve"><g><rect height="60" width="384" x="64" y="226"/></g><g><rect height="60" width="384" x="64" y="354"/></g><g><rect height="60" width="384" x="64" y="98"/></g></svg>		
-									<ul class="menu">
-										<li><a href="home.html.html">Home</a></li>
-										<li><a href="productshow.html.html">Products</a></li>
-										<li><a href="product.html.html">Hot Deals</a></li>
-										<li><a href="#">About</a></li>
-										<li><a href="#">Contact</a></li>
-									</ul>
-								</div>
+								<a class="navbar-toggler" href="#navbar-collapse" data-toggler>Menu</a>	
+								<ul class="navbar-collapse" id="navbar-collapse">
+									<li><a href="home.html.html">Home</a></li>
+									<li><a href="productshow.html.html">Products</a></li>
+									<li><a href="product.html.html">Hot Deals</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>	
 							</div>
 						</div>
 						<div class="header-right">
@@ -530,22 +527,33 @@
 					</div>
 				</div>
 				<script type="text/javascript">
-					$('.range-slider').jRange({
-					    from: 0,
-					    to: 100,
-					    step: 1,
-					    scale: [0,25,50,75,100],
-					    format: '%s money',
-					    width: 300,
-					    showLabels: true,
-					    isRange: true,
-					    snap: true
-					});
-					$('.slider').jRange('setValue', '10,20');
-					$('.slider').jRange('setValue', '10');
-					$('.slider').jRange('updateRange', '0,100');
-					$('.slider').jRange('updateRange', '0,100', '25,50');
-					$('.slider').jRange('updateRange', '0,100', 25);
+					function toggler() {
+						$('[data-toggler]').on('click', function(e) {
+					    	e.preventDefault();
+					    	var $this = $(this);
+					    	var hash = $this.attr('href') || $this.data('target');
+					    	if (!hash) return false;
+					    	$this.toggleClass('is-active');
+					    	$(hash).toggleClass('is-show');
+					    })
+					}
+					toggler();
+					// $('.range-slider').jRange({
+					//     from: 0,
+					//     to: 100,
+					//     step: 1,
+					//     scale: [0,25,50,75,100],
+					//     format: '%s money',
+					//     width: 300,
+					//     showLabels: true,
+					//     isRange: true,
+					//     snap: true
+					// });
+					// $('.slider').jRange('setValue', '10,20');
+					// $('.slider').jRange('setValue', '10');
+					// $('.slider').jRange('updateRange', '0,100');
+					// $('.slider').jRange('updateRange', '0,100', '25,50');
+					// $('.slider').jRange('updateRange', '0,100', 25);
 				</script>
 			</main>
 			<footer class="section section-footer">
