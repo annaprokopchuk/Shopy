@@ -18,6 +18,7 @@
 .list-contacts {
 	display: flex;
 	align-items: center;
+	font-size: 12px;
 }
 
 .list-contacts li {
