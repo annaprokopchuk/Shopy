@@ -79,14 +79,19 @@
 	margin-right: 50px;
 }
 
-.menu-icon {
-	
-}
 
-.menu-icon svg {
+.navbar-toggler svg {
 	fill: #ff5912;
 	display: none;
 }
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
 
 .navigation ul {
 	display: flex;

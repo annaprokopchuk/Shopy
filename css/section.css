@@ -11,6 +11,7 @@
 	font-size: 36px;
 	justify-content: center;
 	display: flex;
+	text-transform: uppercase;
 }
 
 .section-title span {
@@ -562,30 +563,42 @@
 }
 
 @media (max-width: 909px) {
-	.navigation .menu-icon svg {
-		display: block;
-		text-align: right;
-	}
-
-	.navigation .menu-icon {
-		position: relative;
-
-	}
 	.header-left {
 		width: 80%;
 	}
-	.navigation .menu {
-		flex-direction: column;
-		position: absolute;
-		z-index: 5;
-		background-color: #fff;
-		width: 200px;
-		top: 50px;
-		right: 0px;
-		/*display: none;*/
+	.navigation {
+		margin-right: 30px;
 	}
-	.navigation .menu-icon svg:active .menu {
-		display: block;
+	.navbar-collapse {
+		flex-direction: column;
+		display: none;
+		width: 300px;
+		position: absolute;
+		top: 70px;
+		z-index: 1;
+		right: 0px;
+		background: #fff;
+		padding-left: 20px;
+		padding-right: 20px;
+		overflow: hidden;
+	}
+	.navbar-collapse li {
+		border-bottom: 1px solid #34404b;
+		width: 100%;
+		text-align: center;
+	}
+	.navbar-collapse li:last-child {
+		border: none;
+	}
+	.navbar-collapse li:hover {
+		border-color: #ff5912;
+	}
+	.navigation ul {
+		display: none;
+	}
+	.navigation .is-show {
+	  display: flex;
+
 	}
 
 	.card {

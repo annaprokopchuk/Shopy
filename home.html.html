@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 	<title>Shopy</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
@@ -47,16 +48,17 @@
 								</a>
 							</div>
 							<div class="navigation">
-								<div class="menu-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" height="50px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="50px" xml:space="preserve"><g><rect height="60" width="384" x="64" y="226"/></g><g><rect height="60" width="384" x="64" y="354"/></g><g><rect height="60" width="384" x="64" y="98"/></g></svg>	
-								</div>	
-								<ul class="menu">
+								<a class="navbar-toggler" href="#navbar-collapse" data-toggler>Menu
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" height="50px" id="Layer_1" version="1.0" viewBox="0 0 512 512" width="50px" xml:space="preserve"><g><rect height="60" width="384" x="64" y="226"/></g><g><rect height="60" width="384" x="64" y="354"/></g><g><rect height="60" width="384" x="64" y="98"/></g></svg> -->
+								</a>	
+								<ul class="navbar-collapse" id="navbar-collapse">
 									<li><a href="home.html.html">Home</a></li>
 									<li><a href="productshow.html.html">Products</a></li>
 									<li><a href="product.html.html">Hot Deals</a></li>
 									<li><a href="#">About</a></li>
 									<li><a href="#">Contact</a></li>
 								</ul>
+								
 							</div>
 						</div>
 						<div class="header-right">
@@ -495,6 +497,34 @@
 					verticalSwiping: true,
 					appendDots: '.appendDots'
 				});
+				// $(function() {
+				// 	var pull 		= $('#pull');
+				// 		menu 		= $('nav-menu');
+				// 		menuHeight	= menu.height();
+
+				// 	$(pull).on('click', function(e) {
+				// 		e.preventDefault();
+				// 		menu.slideToggle();
+				// 	});
+
+				// 	$(window).resize(function(){
+		  //       		var w = $(window).width();
+		  //       		if(w > 909 && menu.is(':hidden')) {
+		  //       			menu.removeAttr('style');
+		  //       		}
+		  //   		});
+				// });
+				function toggler() {
+					$('[data-toggler]').on('click', function(e) {
+				    	e.preventDefault();
+				    	var $this = $(this);
+				    	var hash = $this.attr('href') || $this.data('target');
+				    	if (!hash) return false;
+				    	$this.toggleClass('is-active');
+				    	$(hash).toggleClass('is-show');
+				    })
+				}
+				toggler();
 			</script>
     
   
